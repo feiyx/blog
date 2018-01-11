@@ -34,7 +34,7 @@ html {
 
 body {
     color: #000;
-    background: url('../../Skins/coffee/images/bg_body.gif') left top;
+    background: url('http://www.cnblogs.com/Skins/coffee/images/bg_body.gif') left top;
     font-family: Verdana,Arial,Helvetica,sans-serif;
     font-size: 9pt;
     min-height: 101%;
@@ -92,7 +92,7 @@ a:active {
 }
 
 #header {
-    background: url('../../Skins/coffee/images/header.gif') right top no-repeat;
+    background: url('http://www.cnblogs.com/Skins/coffee/images/header.gif') right top no-repeat;
     height: 178px;
 }
 
@@ -155,7 +155,7 @@ a:active {
     width: 95%;
     margin: auto;
     height: 40px;
-    background: #FEFEF2 url('../../Skins/coffee/images/line.gif') left bottom repeat-x;
+    background: #FEFEF2 url('http://www.cnblogs.com/Skins/coffee/images/line.gif') left bottom repeat-x;
     margin-bottom: 20px;
 }
 
@@ -198,7 +198,7 @@ a:active {
     margin: auto auto 20px auto;
     padding-bottom: 25px;
     width: 95%;
-    background: #FEFEF2 url('../../Skins/coffee/images/line.gif') left bottom repeat-x;
+    background: #FEFEF2 url('http://www.cnblogs.com/Skins/coffee/images/line.gif') left bottom repeat-x;
     font-size: 14px;
 }
 
@@ -366,7 +366,7 @@ a:active {
     margin-top: 15px;
     margin-bottom: 10px;
     text-align: left;
-    background: url('../../Skins/coffee/images/title_cata.gif') 0 50% no-repeat;
+    background: url('http://www.cnblogs.com/Skins/coffee/images/title_cata.gif') 0 50% no-repeat;
     color: #AA7A53;
     padding: 8px 0px 0px 32px;
 }
@@ -506,7 +506,7 @@ a:active {
 }
 
 .feedbackCon {
-    background: url('images/comment.gif') no-repeat 5px 0px;
+    background: url('http://www.cnblogs.com/skins/coffee/images/comment.gif') no-repeat 5px 0px;
     padding: 25px 18px 10px 40px;
     min-height: 35px;
     _height: 35px;
@@ -754,7 +754,7 @@ a:active {
     height: 30px;
     margin-top: 10px;
     padding-top: 30px;
-    background: #FEFEF2 url('images/bg_left.gif') top left repeat-x;
+    background: #FEFEF2 url('http://www.cnblogs.com/skins/coffee/images/bg_left.gif') top left repeat-x;
 }
 /*留言查看页面的个人信息*/
 .personInfo {
