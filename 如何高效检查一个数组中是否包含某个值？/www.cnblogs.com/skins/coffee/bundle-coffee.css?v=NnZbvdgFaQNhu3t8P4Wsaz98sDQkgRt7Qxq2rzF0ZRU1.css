@@ -92,7 +92,7 @@ a:active {
 }
 
 #header {
-    background: url('http://www.cnblogs.com/Skins/coffee/images/header.gif') right top no-repeat;
+    background: url('../../Skins/coffee/images/header.gif') right top no-repeat;
     height: 178px;
 }
 
@@ -135,7 +135,7 @@ a:active {
 
 #mainContent .forFlow {
     margin: 0 250px 0 0;
-    background: #FEFEF2 url('http://www.cnblogs.com/Skins/coffee/images/bg_left.gif') left top repeat-x;
+    background: #FEFEF2 url('../../Skins/coffee/images/bg_left.gif') left top repeat-x;
     padding-top: 35px;
     padding-bottom: 15px;
 }

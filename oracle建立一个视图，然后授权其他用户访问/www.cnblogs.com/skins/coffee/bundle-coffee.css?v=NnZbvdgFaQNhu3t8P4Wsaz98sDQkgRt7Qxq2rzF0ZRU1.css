@@ -323,7 +323,7 @@ a:active {
 }
 
 .CalTodayDay { /**今天日期样式**/
-    background: url('http://www.cnblogs.com/Skins/coffee/images/bg_cal_today.gif') 52% 3px no-repeat;
+    background: url('../../Skins/coffee/images/bg_cal_today.gif') 52% 3px no-repeat;
     color: white;
 }
 

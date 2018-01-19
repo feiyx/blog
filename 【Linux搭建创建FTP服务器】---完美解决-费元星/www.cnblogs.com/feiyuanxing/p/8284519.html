@@ -1,0 +1,360 @@
+
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>【Linux搭建创建FTP服务器】---完美解决 - 费元星 - 费元星的博客 - 博客园</title>
+<link type="text/css" rel="stylesheet" href="../../bundles/blog-common.css%3Fv=ON3Mxdo4-HlSMqbNDBZXhFIcGLon3eZDvU8zBESgwkk1.css"/>
+<link id="MainCss" type="text/css" rel="stylesheet" href="../../skins/coffee/bundle-coffee.css%3Fv=NnZbvdgFaQNhu3t8P4Wsaz98sDQkgRt7Qxq2rzF0ZRU1.css"/>
+<link type="text/css" rel="stylesheet" href="../../blog/customcss/219212.css%3Fv=SlahhkE7ELQOV9kA%252FmhyfXP48o0=.css"/>
+<link id="mobile-style" media="only screen and (max-width: 767px)" type="text/css" rel="stylesheet" href="../../skins/coffee/bundle-coffee-mobile.css%3Fv=EhLLUe5NHsx18JODVZscd5ef3A8WbJHKTlTvuKQjsl01.css"/>
+<link title="RSS" type="application/rss+xml" rel="alternate" href="http://www.cnblogs.com/feiyuanxing/rss"/>
+<link title="RSD" type="application/rsd+xml" rel="EditURI" href="http://www.cnblogs.com/feiyuanxing/rsd.xml"/>
+<link type="application/wlwmanifest+xml" rel="wlwmanifest" href="http://www.cnblogs.com/feiyuanxing/wlwmanifest.xml"/>
+<script src="http://common.cnblogs.com/scripts/jquery-2.2.0.min.js"></script>
+<script type="text/javascript">var currentBlogApp = 'feiyuanxing', cb_enable_mathjax=false;var isLogined=false;</script>
+<script src="../../bundles/blog-common.js%3Fv=O-NTEmnhjbG7lSYLc3yeqkrVxfMJyY9iXf4xyjlKikw1" type="text/javascript"></script>
+</head>
+<body>
+<a name="top"></a>
+<!--PageBeginHtml Block Begin-->
+<td> <a style="color: red" align="center" href="https://www.feiyx.com/"><b>
+			<center><font size="4">未来星开发团队的官网</font></center>
+			</b>
+			</a>
+	</td>
+	<br>
+<!--PageBeginHtml Block End-->
+
+<!--done-->
+<div id="home">
+<div id="header">
+	<div id="blogTitle">
+	<a id="lnkBlogLogo" href="http://www.cnblogs.com/feiyuanxing/"><img id="blogLogo" src="../../Skins/custom/images/logo.gif" alt="返回主页" /></a>			
+		
+<!--done-->
+<h1><a id="Header1_HeaderTitle" class="headermaintitle" href="http://www.cnblogs.com/feiyuanxing/">费元星的博客</a></h1>
+<h2>未来星工作室--狒狒</h2>
+
+
+
+		
+	</div><!--end: blogTitle 博客的标题和副标题 -->
+</div><!--end: header 头部 -->
+
+<div id="main">
+	<div id="mainContent">
+	<div class="forFlow">
+		<div id="navigator">
+			
+<ul id="navList">
+	<li><a id="blog_nav_sitehome" class="menu" href="http://www.cnblogs.com/">博客园</a></li>
+	<li><a id="blog_nav_myhome" class="menu" href="http://www.cnblogs.com/feiyuanxing/">首页</a></li>
+	<li><a id="blog_nav_newpost" class="menu" rel="nofollow" href="https://i.cnblogs.com/EditPosts.aspx?opt=1">新随笔</a></li>
+	<li><a id="blog_nav_contact" accesskey="9" class="menu" rel="nofollow" href="https://msg.cnblogs.com/send/%E8%B4%B9%E5%85%83%E6%98%9F%E7%9A%84%E5%8D%9A%E5%AE%A2">联系</a></li>
+	<li><a id="blog_nav_admin" class="menu" rel="nofollow" href="https://i.cnblogs.com/">管理</a></li>
+	<li><a id="blog_nav_rss" class="menu" href="http://www.cnblogs.com/feiyuanxing/rss">订阅</a>
+	<a id="blog_nav_rss_image" class="aHeaderXML" href="http://www.cnblogs.com/feiyuanxing/rss"><img src="../../images/xml.gif" alt="订阅" /></a></li>
+</ul>
+
+
+			<div class="blogStats">
+				
+				<div id="blog_stats">
+<!--done-->
+随笔- 92&nbsp;
+文章- 0&nbsp;
+评论- 3&nbsp;
+</div>
+				
+			</div><!--end: blogStats -->
+		</div><!--end: navigator 博客导航栏 -->
+		
+<div id="post_detail">
+<!--done-->
+<div id="topics">
+	<div class = "post">
+		<h1 class = "postTitle">
+			<a id="cb_post_title_url" class="postTitle2" href="8284519.html">【Linux搭建创建FTP服务器】---完美解决 - 费元星</a>
+		</h1>
+		<div class="clear"></div>
+		<div class="postBody">
+			<div id="cnblogs_post_body" class="blogpost-body"><div id="noteIFrameContent" class="editor-area">
+<div>配置大红字文件置顶：</div>
+<div>
+<div class="attachment-container">
+<div class="attachment-icon svg-common src--svg--type_other_large">&nbsp;</div>
+<div class="attachment-title">
+<p class="attachment-title-name">vsftp</p>
+<p class="attachment-title-type">d.conf</p>
+</div>
+<div class="attachment-size">4.5KB</div>
+</div>
+</div>
+<div>&nbsp;</div>
+<div>&nbsp;</div>
+<div>useradd -d /home/bai_du -s /sbin/nologin bai_du</div>
+<div>修改访问权限：</div>
+<div>usermod -d /home/webroot/fourcar.diliulian.com/ -s /sbin/nologin fourcar</div>
+<div>&nbsp;</div>
+<div>&nbsp;</div>
+<div>&nbsp;</div>
+<ol>
+<li>在创建FTP服务器之有先命令：&ensp;ps -ef |grep vsftpd</li>
+</ol>
+<div>费元星版权Q【9715234】</div>
+<div>查一下系统有没有安装vsftpd这个服务器，如果出现如下图所示的界面说明没有安装。</div>
+<div><img src="https://note.youdao.com/yws/public/resource/734f3ac474bb96bb051ad500e0767124/xmlnote/EAD9CF7483204B2BBB22AFE77832165F/35404" alt="" data-media-type="image" data-original="https://note.youdao.com/yws/public/resource/734f3ac474bb96bb051ad500e0767124/xmlnote/EAD9CF7483204B2BBB22AFE77832165F/35404" /></div>
+<div>&nbsp;</div>
+<div>然后再执行：yum install vsftpd -y</div>
+<div>进行在线安装vsftpd这个服务。</div>
+<div>安装成功以后需要把匿名登陆费元星版权Q【9715234】的这个功能关闭了。</div>
+<div>使用命令： vim /etc/vsftpd/vsftpd.conf</div>
+<div>然后在里成找到：&zwj;</div>
+<div>anonymous_enable=NO</div>
+<div><img src="https://note.youdao.com/share/images/replace-img.png" alt="" data-media-type="image" data-original="https://note.youdao.com/yws/public/resource/734f3ac474bb96bb051ad500e0767124/xmlnote/F00EE6BB2B1E43669BBD914C70348366/35405" /></div>
+<div>然后再查看一下vsftpd这个服务有没有启动。</div>
+<div>使用命令： chkconfig --list</div>
+<div>如果你如下图所示一样费元星版权Q【9715234】没有启动。</div>
+<div>没有启动使用启动：chkconfig --level 35 vsftpd on</div>
+<div><img src="https://note.youdao.com/share/images/replace-img.png" alt="" data-media-type="image" data-original="https://note.youdao.com/yws/public/resource/734f3ac474bb96bb051ad500e0767124/xmlnote/91D4DA2FC12F4ADE942941AB70CEFD5A/35410" /></div>
+<div>环境：ftp为vsftp。被限制用户名为test。被限制路径为/home/test</div>
+<div>建用户：在root用户下：</div>
+<div>useradd -d /home/test test //增加用户test，并制费元星版权Q【9715234】定test用户的主目录为/home/test</div>
+<div>如果目录已经存在，会有提示，但是不影响用户的权限登陆</div>
+<div>passwd test //为test设置密码</div>
+<div>更改用户相应的权限设置：</div>
+<div>usermod -s /sbin/nologin test //限定用户test不能telnet，只能ftp</div>
+<div>usermod -s /sbin/bash test //用户test恢复正常</div>
+<div>usermod -d /test test //更改用户test的主目录为/test</div>
+<div>限制用户只能访问/home/test，不能访问其他路径</div>
+<div>修改/etc/vsftpd/vsftpd.conf如下：</div>
+<div>chroot_list_enable=YES //限制访问自身目录</div>
+<div># (default follows)</div>
+<div>chroot_list_file=/etc/vsftpd/vsftpd.chroot_list</div>
+<div>&nbsp;</div>
+<div>另外还有一些基础增强选项</div>
+<div>在文件末尾加如下的设置：</div>
+<div># new added by netseek</div>
+<div>listen_port=5021 ;命令通道端口，默认为21</div>
+<div>listen_data_port=5020 ;数据通道端口，默认为20</div>
+<div>pasv_enable=YES ;允许被动模式</div>
+<div>pasv_min_port=10000 ；被动模式使用端口范围</div>
+<div>pasv_max_port=10010</div>
+<div>local_max_rate=200000 ；用户宽带限制</div>
+<div>chroot_local_user=YES ；禁止用户离开主目录</div>
+<div>listen_address=192.168.0.21 ；让他监听ip:192.168.0.21</div>
+<div>&nbsp;</div>
+<div>&nbsp;</div>
+<div>编辑 vsftpd.chroot_list文件，将受限制的用户添加进去，每个用户名一行</div>
+<div>改完配置文件，不要忘记重启vsFTPd服务器</div>
+<div>[root@linuxsir001 root]# /etc/init.d/vsftpd restart</div>
+<div>如果需要允许用户修改密码，但是又没有telnet登录系统的权限：</div>
+<div>&nbsp;</div>
+<div>usermod -s /usr/bin/passwd test //用户telnet后将直接进入改密界面</div>
+<div>&nbsp;</div>
+<div>最后重启一下服务：service vsftpd start</div>
+<div>如果出现启动失败则可以使用：/etc/rc.d/init.d/vsftpd restart</div>
+<div><img src="https://note.youdao.com/share/images/replace-img.png" alt="" data-media-type="image" data-original="https://note.youdao.com/yws/public/resource/734f3ac474bb96bb051ad500e0767124/xmlnote/A4421A45C89C4FB6A647DA4FDDED17F5/35409" /></div>
+<div>成功链接FTP服务器上。</div>
+<div>------------------------------------------------------------------------------------------------</div>
+<div>遇到的问题：</div>
+<div>VSFTP中登录提示 500 OOPS: cannot change directory</div>
+<div>首先的解决方法是：</div>
+<div>（1）[root@xuyuntao ~]# setsebool -P ftpd_disable_trans 1</div>
+<div>Boolean ftpd_disable_trans is not defined （这里我会有这个提示）</div>
+<div>[root@xuyuntao ~]# getsebool -a |grep ftp_home</div>
+<div>ftp_home_dir --&gt; on （如果此处是off的话执行下边的命令）</div>
+<div>[root@xuyuntao ~]#setsebool -P ftp_home_dir 1</div>
+<div>执行完之后再去登陆试试。</div>
+<div>&nbsp;</div>
+<div>（2）[root@xuyuntao ~]# setsebool -P ftpd_disable_trans 1</div>
+<div>如果此命令执行成功的话，</div>
+<div>[root@xuyuntao ~]service vsftpd restart</div>
+<div>再试试</div>
+<div>&nbsp;</div>
+<div>&nbsp;</div>
+<div>（3）如果还不行的话就试试下边的方式吧</div>
+<div>如果还是不行的话再使用下面完全方式：</div>
+<div>[root@linux115 vsftpd]# setsebool allow_ftpd_full_access 1</div>
+<div>[root@linux115 vsftpd]# setsebool allow_ftpd_use_cifs 1</div>
+<div>[root@linux115 vsftpd]# setsebool allow_ftpd_use_nfs 1</div>
+<div>[root@linux115 vsftpd]# setsebool -P ftp_home_dir 1</div>
+<div>[root@linux115 vsftpd]# setsebool httpd_enable_ftp_server 1</div>
+<div>[root@linux115 vsftpd]# setsebool tftp_anon_write 1</div>
+<div>[root@linux115 vsftpd]# service vsftpd restart</div>
+<div>&nbsp;</div>
+<div>这是我遇到的问题，仅供大家参考。</div>
+<div>&nbsp;</div>
+<div>&nbsp;</div>
+<div>防火墙遇到的问题2:</div>
+<div><img src="https://note.youdao.com/share/images/replace-img.png" alt="" data-media-type="image" data-original="https://note.youdao.com/yws/public/resource/734f3ac474bb96bb051ad500e0767124/xmlnote/ED9DFBD91B20449EA237C90FE1952898/54375" /></div>
+<div>临时的解决方法是执行如下命令：</div>
+<div>&nbsp;</div>
+<div>[root@localhost soft]# modprobe ip_nat_ftp</div>
+<div>&nbsp;</div>
+<div>长久方案：</div>
+<div>但当你重新启动服务器则iptables规则失效，又会出现相同的情况，所以我们需要修改/etc/sysconfig/iptables-config文件，</div>
+<div>[root@localhost soft]# vi /etc/sysconfig/iptables-config</div>
+<div>&nbsp;</div>
+<div>我们需要把</div>
+<div>IPTABLES_MODULES=""</div>
+<div>修改为：</div>
+<div>IPTABLES_MODULES="ip_nat_ftp"</div>
+<div>这样重启服务器之后就不必再每次都执行mobprobe啦。</div>
+<div>&nbsp;</div>
+<div>&nbsp;</div>
+<div>遇到的的问题3：</div>
+<div>ftpuser登录ftp后上传文件或新建目录，如果出现&ldquo;550 create directory operation failed&rdquo;</div>
+<div>是SELinux(Security-Enhanced <a href="http://lib.csdn.net/base/linux">Linux</a>----是美国国家安全局对于强制访问控制的实现, 是Linux 上最杰出的新安全子系统.)安装机制搞的鬼.只要disable SELinux就可以了.</div>
+<div>PS: 关闭SELinux方法</div>
+<div>[root@CenOS ~]# vim /etc/selinux/config</div>
+<div>将 SELINUX=XXX --&gt;XXX 代表级别</div>
+<div>改为</div>
+<div>SELINUX=disabled</div>
+<div>重启就OK了!</div>
+<div>&nbsp;</div>
+<div>&nbsp;</div>
+<div>&nbsp;</div>
+<div>问题4：</div>
+<div>解决vsftpd连接错误425 Security: Bad IP connecting</div>
+<div>www.111cn.net 更新:2014-03-18 编辑:mengchu9 来源:转载</div>
+<div>今天在linux机器上安装了一个vsftpd服务器，结果在连接时出现425 Security: Bad IP connecting错误了，经过一上午的搜索总结出一此问题解决办法。</div>
+<div>错误提示</div>
+<div>425 Security: Bad IP connecting</div>
+<div>主要是需要在/etc/vsftpd/vsftpd.conf文件中添加如下一行：</div>
+<div>
+<table border="1" cellspacing="0" cellpadding="0">
+<tbody>
+<tr>
+<td>
+<div class="table-cell-line">代码如下</div>
+</td>
+<td>
+<div class="table-cell-line">复制代码</div>
+</td>
+</tr>
+<tr>
+<td colspan="2">
+<div class="table-cell-line">pasv_promiscuous=YES&nbsp;service vsftpd restart</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div>pasv_promiscuous选项参数说明：</div>
+<div>此选项激活时，将关闭PASV模式的安全检查。该检查确保数据连接和控制连接是来自同一个IP地址。小心打开此选项。此选项唯一合理的用法是存在于由安全隧道方案构成的组织中。默认值为NO。</div>
+<div>合理的用法是：在一些安全隧道配置环境下，或者更好地支持FXP时(才启用它)。</div>
+<div>如果不行，将Subsystem sftp /usr/libexec/openssh/sftp-server</div>
+<div>改为Subsystem sftp internal-sftp</div>
+<div>systemctl restart sshd.service</div>
+<div>&nbsp;</div>
+<div>&nbsp;</div>
+<div>&nbsp;</div>
+<div>&nbsp;</div>
+<div>&nbsp;</div>
+<div>Linux下如何修改用户默认目录</div>
+<div>1、切换到root用户，直接修费元星版权Q【9715234】改/etc/passwd文件，找到你的用户名你一行，如下图所示修改路径，然后保存即可。</div>
+<div><img src="https://note.youdao.com/share/images/replace-img.png" alt="" data-media-type="image" data-original="https://note.youdao.com/yws/public/resource/734f3ac474bb96bb051ad500e0767124/xmlnote/C76467F7BCEB4BA88E21BA20A57A3846/35406" /></div>
+<div>2、切换到root用户，使用usermod命令，例如usermod -d /tmp test (test为你的用户名)，使用该命令请确保该用户下没有运行的软件或进程</div>
+<div><img src="https://note.youdao.com/share/images/replace-img.png" alt="" data-media-type="image" data-original="https://note.youdao.com/yws/public/resource/734f3ac474bb96bb051ad500e0767124/xmlnote/4E9601DABA894F39B2B30ECAA85C410B/35407" /></div>
+<div>最后切换到普通账户，就会看到费元星版权Q【9715234】当前默认目录已经更改了。</div>
+<div><img src="https://note.youdao.com/share/images/replace-img.png" alt="" data-media-type="image" data-original="https://note.youdao.com/yws/public/resource/734f3ac474bb96bb051ad500e0767124/xmlnote/1B5D1A4B0F8C4366BE6AB0991F854CD5/35408" /></div>
+<div>费元星版权Q【9715234】</div>
+<div>&nbsp;</div>
+<div>&nbsp;</div>
+<div>FTP允许root登录</div>
+<div>[root@localhost vsftpd]# cat ftpusers</div>
+<div># Users that are not allowed to login via ftp</div>
+<div>#root</div>
+<div>&nbsp;</div>
+<div>[root@localhost vsftpd]# cat user_list</div>
+</div>
+<div id="gtx-trans">&nbsp;</div></div><div id="MySignature"></div>
+<div class="clear"></div>
+<div id="blog_post_info_block">
+<div id="BlogPostCategory"></div>
+<div id="EntryTag"></div>
+<div id="blog_post_info">
+</div>
+<div class="clear"></div>
+<div id="post_next_prev"></div>
+</div>
+
+
+		</div>
+		<div class = "postDesc">posted @ <span id="post-date">2018-01-14 21:49</span> <a href='http://www.cnblogs.com/feiyuanxing/'>费元星的博客</a> 阅读(<span id="post_view_count">...</span>) 评论(<span id="post_comment_count">...</span>)  <a href ="https://i.cnblogs.com/EditPosts.aspx?postid=8284519" rel="nofollow">编辑</a> <a href="8284519.html#" onclick="AddToWz(8284519);return false;">收藏</a></div>
+	</div>
+	<script type="text/javascript">var allowComments=true,cb_blogId=219212,cb_entryId=8284519,cb_blogApp=currentBlogApp,cb_blogUserGuid='806a1ad5-d1cf-e411-b908-9dcfd8948a71',cb_entryCreatedDate='2018/1/14 21:49:00';loadViewCount(cb_entryId);var cb_postType=1;</script>
+	
+</div><!--end: topics 文章、评论容器-->
+</div><a name="!comments"></a><div id="blog-comments-placeholder"></div><script type="text/javascript">var commentManager = new blogCommentManager();commentManager.renderComments(0);</script>
+<div id='comment_form' class='commentform'>
+<a name='commentform'></a>
+<div id='divCommentShow'></div>
+<div id='comment_nav'><span id='span_refresh_tips'></span><a href='javascript:void(0);' onclick='return RefreshCommentList();' id='lnk_RefreshComments' runat='server' clientidmode='Static'>刷新评论</a><a href='8284519.html#' onclick='return RefreshPage();'>刷新页面</a><a href='8284519.html#top'>返回顶部</a></div>
+<div id='comment_form_container'></div>
+<div class='ad_text_commentbox' id='ad_text_under_commentbox'></div>
+<div id='ad_t2'></div>
+<div id='opt_under_post'></div>
+<div id='cnblogs_c1' class='c_ad_block'></div>
+<div id='under_post_news'></div>
+<div id='cnblogs_c2' class='c_ad_block'></div>
+<div id='under_post_kb'></div>
+<div id='HistoryToday' class='c_ad_block'></div>
+<script type='text/javascript'>
+    fixPostBody();
+    setTimeout(function () { incrementViewCount(cb_entryId); }, 50);
+    deliverAdT2();
+    deliverAdC1();
+    deliverAdC2();    
+    loadNewsAndKb();
+    loadBlogSignature();
+    LoadPostInfoBlock(cb_blogId, cb_entryId, cb_blogApp, cb_blogUserGuid);
+    GetPrevNextPost(cb_entryId, cb_blogId, cb_entryCreatedDate, cb_postType);
+    loadOptUnderPost();
+    GetHistoryToday(cb_blogId, cb_blogApp, cb_entryCreatedDate);   
+</script>
+</div>
+
+
+	</div><!--end: forFlow -->
+	</div><!--end: mainContent 主体内容容器-->
+
+	<div id="sideBar">
+		<div id="sideBarMain">
+			
+<!--done-->
+<div class="newsItem">
+<h3 class="catListTitle">公告</h3>
+	<div id="blog-news"></div><script type="text/javascript">loadBlogNews();</script>
+</div>
+
+			<div id="calendar"><div id="blog-calendar" style="display:none"></div><script type="text/javascript">loadBlogDefaultCalendar();</script></div>
+			
+			<DIV id="leftcontentcontainer">
+				<div id="blog-sidecolumn"></div><script type="text/javascript">loadBlogSideColumn();</script>
+			</DIV>
+			
+		</div><!--end: sideBarMain -->
+	</div><!--end: sideBar 侧边栏容器 -->
+	<div class="clear"></div>
+	</div><!--end: main -->
+	<div class="clear"></div>
+	<div id="footer">
+		
+<!--done-->
+Copyright &copy;2018 费元星的博客
+	</div><!--end: footer -->
+</div><!--end: home 自定义的最大容器 -->
+<!--PageEndHtml Block Begin-->
+<td> <a style="color: red" align="center" href="https://www.feiyx.com/"><b>
+			<center><font size="15">未来星开发团队的官网</font></center>
+			</b>
+			</a>
+	</td>
+	<br>
+<!--PageEndHtml Block End-->
+</body>
+</html>
